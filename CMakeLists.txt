@@ -25,6 +25,8 @@ foreach(VARIANT IN LISTS MALI_VARIANT)
         list(APPEND MALI_FILE libmali-bifrost-g31-r16p0-gbm.so)
     elseif(VARIANT STREQUAL "g52")
         list(APPEND MALI_FILE libmali-bifrost-g52-r16p0-gbm.so)
+    elseif(VARIANT STREQUAL "g72")
+        list(APPEND MALI_FILE libmali-bifrost-g72-r16p0-wayland-gbm.so)
     endif()
 endforeach()
 
