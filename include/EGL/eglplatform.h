@@ -80,7 +80,7 @@ struct gbm_bo;
 
 typedef struct gbm_device  *EGLNativeDisplayType;
 typedef struct gbm_bo      *EGLNativePixmapType;
-typedef void               *EGLNativeWindowType;
+typedef khronos_uintptr_t   EGLNativeWindowType;
 
 #endif
 
