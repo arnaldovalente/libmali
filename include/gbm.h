@@ -195,6 +195,10 @@ enum gbm_bo_format {
  */
 enum gbm_bo_flags {
    /**
+    * Mali doesn't use or support this flag
+    */
+   GBM_BO_USE_LINEAR       = (0),
+   /**
     * Buffer is going to be presented to the screen using an API such as KMS
     */
    GBM_BO_USE_SCANOUT      = (1 << 0),
